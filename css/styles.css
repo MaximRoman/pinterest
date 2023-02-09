@@ -1,0 +1,211 @@
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 80px auto;
+}
+.wrapper .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 20px 27px;
+}
+.wrapper .header .logo {
+  color: #CC0000;
+  font-size: 24px;
+}
+.wrapper .header .search {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  width: 60%;
+  background-color: #e9e9e9;
+  border-radius: 50px;
+  color: #767676;
+}
+.wrapper .header .search input {
+  height: 100%;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: none;
+}
+.wrapper .header .search i {
+  padding: 12px;
+}
+.wrapper .header .search .search-close-btn {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.wrapper .header .search .search-close-btn:hover {
+  background-color: #D4D4D4;
+  text-align: center;
+  border-radius: 50px;
+}
+.wrapper .main {
+  width: 100%;
+}
+.wrapper .main .pin_container {
+  margin: 0;
+  width: 100%;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1px;
+  column-gap: 20px;
+  justify-content: space-evenly;
+}
+.wrapper .main .pin_container .card {
+  height: fit-content;
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: auto 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrapper .main .pin_container .card img {
+  width: 100%;
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.wrapper .main .pin_container .card .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #CC0000;
+}
+.wrapper .main .pin_container .card .btn:hover {
+  background-color: #ac0101;
+}
+.wrapper .main .pin_container .card .btn:active {
+  background-color: #850202;
+}
+.wrapper .main .pin_container .card_small {
+  grid-row-end: span 26;
+}
+.wrapper .main .pin_container .card_medium {
+  grid-row-end: span 33;
+}
+.wrapper .main .pin_container .card_large {
+  grid-row-end: span 45;
+}
+.wrapper .main .pin_container h1 {
+  text-align: center;
+}
+.wrapper .main .inner-main-create {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 200px;
+}
+.wrapper .main .inner-main-create .create-pin-form {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  gap: 20px;
+}
+.wrapper .main .inner-main-create .create-pin-form label {
+  color: #767676;
+  cursor: pointer;
+  width: 80%;
+  height: 90%;
+  border: 2px dashed gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.wrapper .main .inner-main-create .create-pin-form label p {
+  text-align: center;
+}
+.wrapper .main .inner-main-create .create-pin-form div {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.wrapper .main .inner-main-create .create-pin-form div button {
+  cursor: pointer;
+  min-width: 200px;
+  border: none;
+  outline: none;
+  background-color: #CC0000;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.wrapper .main .inner-main-create .create-pin-form div button:hover {
+  background-color: #ac0101;
+}
+.wrapper .main .inner-main-create .create-pin-form div button:active {
+  background-color: #850202;
+}
+.wrapper .main .inner-main-create .create-pin-form div input {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: none;
+  background-color: #D4D4D4;
+}
+
+.create-pin-form {
+  width: 80%;
+  background-color: white;
+}
+
+select {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+select:hover {
+  background-color: #e9e9e9;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 50px;
+  min-width: 100px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #e9e9e9;
+}/*# sourceMappingURL=styles.css.map */
